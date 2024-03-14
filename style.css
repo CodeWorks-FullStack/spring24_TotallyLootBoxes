@@ -1,0 +1,83 @@
+body {
+  background-color: #FFFBE8;
+  font-family: "Roboto", sans-serif;
+}
+
+.fancy-font {
+  font-family: "La Belle Aurore", cursive;
+}
+
+.nav-logo {
+  width: 50px;
+  object-fit: contain;
+}
+
+.hero-img {
+  min-height: 50dvh;
+  background-image: url(https://images.unsplash.com/photo-1622457497437-29a0f12441fc?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
+}
+
+.containing-block {
+  position: relative;
+  min-height: 5vh;
+  padding: 0;
+}
+
+/* REVIEW we need our class to "shut off" on mobile */
+@media (min-width: 768px) {
+  /* everything inside this "media" rule will only be "on" when the screen is larger than 768px */
+
+  .larger-than-768 {
+    border: red 5px solid
+  }
+
+  .magic-card {
+    position: absolute;
+    bottom: -10vh;
+  }
+
+  .magic-card-offset {
+    margin-bottom: 10vh;
+  }
+}
+
+.sticky-form-offset {
+  top: 8.5vh;
+}
+
+
+.treasure-border {
+  border-bottom: 5px dashed #DA716B;
+}
+
+.card img {
+  height: 25vh;
+  object-fit: cover;
+}
+
+.fine-print {
+  font-size: 8px;
+  opacity: .6;
+}
+
+.card-body p {
+  max-height: 2.5em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+button.btn-warning {
+  border-radius: 54px;
+  border: 4px solid var(--Border, #EAB223);
+  background: var(--Gold-bg, linear-gradient(95deg, #FFE500 27.3%, #FFFBD5 53.66%, #FFE500 68.06%));
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  color: #000;
+  stroke: #EAB223;
+  stroke-width: 5px;
+  font-size: 18px;
+  font-weight: 700;
+}

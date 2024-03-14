@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📦Totally Loot Boxes</title>
+  <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet'
+    integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD' crossorigin='anonymous'>
+  <link rel="stylesheet" href="style.css">
+  <script id="debug-script" src="https://cdn.jsdelivr.net/gh/MickShannahan/style-debug@latest/debug.min.js"
+    defer></script>
+  <!-- What about icons? -->
+  <!-- NOTE the website to preview some of these icons is pictogrammers.com/library/mdi/ -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
+
+  <!-- NOTE links from google fonts
+  Here there are 2 fonts selected with plenty of weights for one
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="">
+  <!-- SECTION nav bar -->
+  <nav class="container-fluid bg-warning sticky-top">
+    <section class="row p-3 fs-4 fancy-font">
+      <img class=" nav-logo" src="./assests/imgs/TLB-Logo.png" alt=""> Totally Loot Boxes
+      <!-- <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 759 759" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M148.581 0C66.5219 0 0 66.5219 0 148.581V610.419C0 692.478 66.5219 759 148.581 759H610.419C692.478 759 759 692.478 759 610.419V148.581C759 66.5219 692.478 0 610.419 0H148.581ZM646.741 379.707L379.707 112.674L112.674 379.707L379.707 646.741L646.741 379.707Z"
+          fill="#D9D9D9" />
+      </svg> -->
+    </section>
+  </nav>
+
+  <header class="container-fluid">
+    <!-- SECTION for spilling magic card -->
+    <section class="row hero-img p-4 align-items-end justify-content-center magic-card-offset">
+
+      <div class="col-12 d-none d-md-block">
+        <h1 class="text-light fw-bold text-center mb-5 pb-5 fancy-font">Major key, don’t fall for the trap, stay
+          focused.
+        </h1>
+      </div>
+      <div class="col-12 d-block d-md-none">
+        <h5 class="text-light fw-bold text-center mb-2 pb-2 fancy-font">
+          Major key, don’t fall for the trap.
+        </h5>
+      </div>
+
+      <div class="col-10 col-md-8 containing-block">
+        <section class="magic-card bg-light p-4 rounded shadow">
+          <p>
+            Look at the sunset, life is amazing, life is beautiful, life is what you make it. The key to success is to
+            keep
+            your head above the water, never give up. The key to more success is to get a massage once a week, very
+            important, major key, cloth talk. Find peace, life is like a water fall, you’ve gotta flow. The key to more
+            success is to have a lot of pillows. The key is to enjoy life, because they don’t want you to enjoy life. I
+            promise you, they don’t want you to jetski, they don’t want you to smile.
+          </p>
+          <!-- NOTE d-flex and justify-content-end would also work here -->
+          <div class="text-end">
+            <button class="btn btn-warning rounded rounded-pill">Shop For Loot</button>
+          </div>
+        </section>
+      </div>
+
+    </section>
+  </header>
+  <main class="container pt-5">
+    <!-- SECTION shop start -->
+    <section class="row treasure-border mb-5">
+      <div class="col-12 fs-3 text-center fancy-font">
+        Treasure Awaits Ye
+      </div>
+    </section>
+
+    <!-- SECTION shop items -->
+    <section class="row">
+      <!-- STUB filter form -->
+      <div class="col-12 col-md-3 mb-4">
+        <form class="row bg-white rounded p-2 shadow sticky-md-top sticky-form-offset">
+          <div class="col-12">
+            <h4>Filter Items</h4>
+          </div>
+          <div class="mb-2">
+            <Label>Search Real Items</Label>
+            <input type="text" class="form-control" placeholder="Search Thy Wares...">
+          </div>
+          <div class="mb-2">
+            <label>Doubloon Range</label>
+            <input type="range" class="form-range" min="0" max="10">
+          </div>
+          <div class="mb-2">
+            <input type="checkbox" class="form-check-inline">
+            <label>Weapons</label>
+          </div>
+          <div class="mb-2">
+            <input type="checkbox" class="form-check-inline">
+            <label>Armors</label>
+          </div>
+          <div class="mb-2">
+            <input type="checkbox" class="form-check-inline">
+            <label>Potions</label>
+          </div>
+          <div class="mb-2">
+            <input type="checkbox" class="form-check-inline">
+            <label>Amulets/Jewelry</label>
+          </div>
+          <div class="mb-2">
+            <button class="btn btn-outline-primary w-100 rounded rounded-pill">Filter Goods</button>
+          </div>
+        </form>
+      </div>
+
+
+      <!-- STUB Shop cards -->
+      <div class="col-12 col-md-9">
+        <section class="row g-2">
+          <div class="col-6 col-md-4">
+            <div class="card">
+              <img class="card-img-top"
+                src="https://images.unsplash.com/photo-1592824554628-40098261908b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGFuc3xlbnwwfHwwfHx8MA%3D%3D"
+                alt="Picture of a pan that is totally real and not fake">
+              <div class="card-body">
+                <h5 class="card-title">Totally Real Pan</h5>
+                <p>This pan is great at cooking things and is not alive.</p>
+                <div class="text-end">
+                  <button class="btn btn-warning rounded rounded-pill">Add <span
+                      class="mdi mdi-cart-plus"></span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="card">
+              <img class="card-img-top"
+                src="https://images.unsplash.com/photo-1551905445-85602af27f47?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHBhbnN8ZW58MHx8MHx8fDA%3D"
+                alt="Picture of a pan that is totally real and not fake">
+              <div class="card-body">
+                <h5 class="card-title">Very Real Pan</h5>
+                <p>This pan is great at cooking things and is not alive.</p>
+                <div class="text-end">
+                  <button class="btn btn-warning rounded rounded-pill">Add <i class="mdi mdi-cart-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="card">
+              <img class="card-img-top"
+                src="https://images.unsplash.com/photo-1613504113118-f2a45ece270e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZGFnZ2VyfGVufDB8fDB8fHww"
+                alt="Picture of a pan that is totally real and not fake">
+              <div class="card-body">
+                <h5 class="card-title"> Magic Dagger</h5>
+                <p>Great at slaying foes, and sticking things.</p>
+                <div class="text-end">
+                  <button class="btn btn-warning rounded rounded-pill">Add <i class="mdi mdi-cart-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="card">
+              <img class="card-img-top"
+                src="https://images.unsplash.com/photo-1610270066297-7b06341d2b8a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cG90aW9ufGVufDB8fDB8fHww"
+                alt="Picture of a pan that is totally real and not fake">
+              <div class="card-body">
+                <h5 class="card-title">Box of Potions</h5>
+                <p>They might look suspicious but they are totally good for you.</p>
+                <div class="text-end">
+                  <button class="btn btn-warning rounded rounded-pill">Add <i class="mdi mdi-cart-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="card">
+              <img class="card-img-top"
+                src="https://plus.unsplash.com/premium_photo-1674719144437-d1c253a8b775?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Ym9vdHN8ZW58MHx8MHx8fDA%3D"
+                alt="Picture of a pan that is totally real and not fake">
+              <div class="card-body">
+                <h5 class="card-title">Ol' Boots</h5>
+                <p>Many steps have been taken in these leather foot domiciles.</p>
+                <div class="text-end">
+                  <button class="btn btn-warning rounded rounded-pill">Add <i class="mdi mdi-cart-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="card">
+              <img class="card-img-top"
+                src="https://images.unsplash.com/photo-1605812860427-4024433a70fd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Ym9vdHN8ZW58MHx8MHx8fDA%3D"
+                alt="Picture of a pan that is totally real and not fake">
+              <div class="card-body">
+                <h5 class="card-title">Older Boots</h5>
+                <p>You won't believe how good they smell.</p>
+                <div class="text-end">
+                  <button class="btn btn-warning rounded rounded-pill">Add <i class="mdi mdi-cart-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="card">
+              <img class="card-img-top"
+                src="https://images.unsplash.com/photo-1592824554628-40098261908b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGFuc3xlbnwwfHwwfHx8MA%3D%3D"
+                alt="Picture of a pan that is totally real and not fake">
+              <div class="card-body">
+                <h5 class="card-title">Totally Real Pan</h5>
+                <p>This pan is great at cooking things and is not alive.</p>
+                <div class="text-end">
+                  <button class="btn btn-warning rounded rounded-pill">Add <span
+                      class="mdi mdi-cart-plus"></span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="card">
+              <img class="card-img-top"
+                src="https://images.unsplash.com/photo-1551905445-85602af27f47?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHBhbnN8ZW58MHx8MHx8fDA%3D"
+                alt="Picture of a pan that is totally real and not fake">
+              <div class="card-body">
+                <h5 class="card-title">Very Real Pan</h5>
+                <p>This pan is great at cooking things and is not alive.</p>
+                <div class="text-end">
+                  <button class="btn btn-warning rounded rounded-pill">Add <i class="mdi mdi-cart-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="card">
+              <img class="card-img-top"
+                src="https://images.unsplash.com/photo-1613504113118-f2a45ece270e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZGFnZ2VyfGVufDB8fDB8fHww"
+                alt="Picture of a pan that is totally real and not fake">
+              <div class="card-body">
+                <h5 class="card-title"> Magic Dagger</h5>
+                <p>Great at slaying foes, and sticking things.</p>
+                <div class="text-end">
+                  <button class="btn btn-warning rounded rounded-pill">Add <i class="mdi mdi-cart-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- <div class="col-2">Card 1</div>
+      <div class="col-2">Card 2</div>
+      <div class="col-2">Card 3</div>
+      <div class="col-2">Card 4</div>
+      <div class="col-2">Card 5</div> -->
+    </section>
+  </main>
+  <footer class="container-fluid bg-dark mt-5">
+    <section class="row justify-content-center p-3">
+      <div class="col-5">
+        <p class="fine-print text-center text-light">
+          9/10 adventurers are not eaten by our items, and rank their magic highly on the magic scale.
+          All sales are final, no refunds. payment must be made in doubloons.
+          Please rate us on google.
+        </p>
+      </div>
+    </section>
+  </footer>
+</body>
+
+</html>
